@@ -1,0 +1,56 @@
+.Navbar {
+  display: flex;
+  max-width: 100%;
+  padding: 0.5% 20%;
+  border-bottom: 1px solid #cfdae1;
+  align-items: center;
+  background-color: white;
+  top: 0;
+  overflow: auto;
+}
+
+.Navbar__LinksContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: white;
+  position: absolute;
+  right: 18%;
+}
+.Navbar__AppLogo {
+  height: 3rem;
+  object-fit: contain;
+  margin: 0 10px;
+}
+
+.Title__Text {
+  text-decoration: none;
+}
+.Navbar__Links {
+  line-height: 24px;
+  text-decoration: none;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  margin-right: 0;
+  margin-left: 16px;
+  padding: 8px 16px;
+  transition: background-color 0.2s ease;
+  border-radius: 6px;
+  background-color: white;
+  color: #333333;
+}
+
+#current {
+  background-color: #e7edff;
+  color: #5884fc;
+}
+
+.Navbar__Links:hover {
+  background-color: #e7edff;
+}
+h1 {
+  color: #187cf5;
+  font-size: 3em;
+}

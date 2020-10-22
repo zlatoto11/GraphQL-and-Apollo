@@ -1,0 +1,9 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.app {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+}

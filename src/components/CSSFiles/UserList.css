@@ -1,0 +1,167 @@
+body {
+  color: #566787;
+  font-size: 13px;
+}
+
+/* The switch - the box around the slider */
+.UserList__containerTitle {
+  padding: 2.5% 0%;
+  font-size: 4em;
+  line-height: 1.2em;
+  font-weight: 900;
+  text-align: center;
+  color: #333333;
+}
+
+.UserList__UserSelect,
+.UserList__permissionSelect {
+  display: flex;
+  padding: 0% 1.5%;
+}
+.UserList__selectContainer {
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+  margin: 1% 0%;
+}
+
+.UserList__selectButton {
+  width: 125px;
+}
+.switch {
+  position: relative;
+  float: right;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+label {
+  margin: auto 5px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #fcfcfc;
+}
+
+td,
+th {
+  border-bottom: 1px solid #999;
+  padding: 0.5rem;
+}
+
+h2 {
+  font-size: 1em;
+  font-weight: 300;
+  text-align: center;
+  color: white;
+}
+
+.UserList__container {
+  text-align: left;
+  width: 50%;
+  margin: 0 auto;
+  display: table;
+  padding: 0 0 8em 0;
+}
+
+.UserList__container td {
+  font-weight: normal;
+  font-size: 1em;
+}
+
+.table-UserList__tableContainer {
+  margin: 10px 0;
+}
+.UserList__tableTitle {
+  background: #187cf5;
+  color: white;
+  border-radius: 3px 3px 0 0;
+}
+.UserList__tableTitle h2 {
+  font-size: 24px;
+  padding: 1rem 0rem;
+}
+table.table tr th,
+table.table tr td {
+  text-align: center;
+  padding: 12px 15px;
+}
+table.table tr th:first-child {
+  width: 80px;
+}
+table.table tr th:last-child {
+  width: 100px;
+}
+
+table.table-striped.table-hover tbody tr:hover {
+  background: #f5f5f5;
+}
+
+button {
+  background-color: #187cf5;
+  color: white;
+  border-color: white;
+  font-weight: 500;
+  border-radius: 6px;
+  padding: 5px 0px;
+}
+
+button:focus {
+  outline: none;
+}
