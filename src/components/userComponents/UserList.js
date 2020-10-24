@@ -57,17 +57,6 @@ export default class userList extends Component {
     //get toggle state
     var isItChecked = document.getElementById("checkbox").checked;
     if (isItChecked) {
-      // sends a new query to request data from server
-      // var permissions = document.getElementById("checkbox").value;
-      // console.log("Permissions value:" + permissions);
-      // const res = await axios.post(Constants.GRAPHQL_API, {
-      //   query: Constants.FILTER_USERS_BY_PERMISSIONS,
-      //   variables: { userPermissions: true },
-      // });
-      // this.setState({ users: res.data.data.users });
-      // console.log("hi" + res.data.data.users);
-
-      //just modifies current state array to return results.
       this.setState({
         users: filterUsersByPermissions(this.state.users, true),
       });
